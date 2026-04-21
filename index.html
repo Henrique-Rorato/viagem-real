@@ -5,43 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diário de Viagem do Henrique</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#intro">Introdução</a></li>
-                <li><a href="#vi1">Viagem 1</a></li>
-                <li><a href="#vi2">Viagem 2</a></li>
-                <li><a href="#vi3">Viagem 3</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#intro"><i class="fas fa-home"></i> Introdução</a></li>
+                <li><a href="#vi1"><i class="fas fa-lightbulb"></i> Viagem 1</a></li>
+                <li><a href="#vi2"><i class="fas fa-mountain"></i> Viagem 2</a></li>
+                <li><a href="#vi3"><i class="fas fa-utensils"></i> Viagem 3</a></li>
+                <li><a href="#gallery"><i class="fas fa-camera"></i> Galeria</a></li>
+                <li><a href="#dicas"><i class="fas fa-info-circle"></i> Dicas</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li class="nav-action"><a href="#interacoes" class="btn-interacoes"><i class="fas fa-cogs"></i> Interações</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="intro">
-            <h1>Introdução à Viagem</h1>
+            <h1><i class="fas fa-plane"></i> Introdução à Viagem</h1>
             <p>Eu e minha família fomos viajar a Serra do Rio do Rastro em dezembro do ano passado, para conhecermos lugares novos, já que não costumamos sair para fazer esse tipo de coisa.</p>
             <img src="imagens/imagem2.jpg" alt="Imagem de introdução">
         </section>
         <section id="vi1">
-            <h2>Ideia</h2>
+            <h2><i class="fas fa-lightbulb"></i> Ideia</h2>
             <p>Queríamos explorar lugares novos para criar memórias e escolhemos um caminho que nos levou a vários lugares nas proximidades.</p>
             <img src="imagens/imagem3.jpg" alt="Imagem da viagem 1">
         </section>
         <section id="vi2">
-            <h2>Serra do Rio do Rastro</h2>
+            <h2><i class="fas fa-mountain"></i> Serra do Rio do Rastro</h2>
             <p>Passamos por ela inteira e fomos até o mirante 12. Foi algo meio assustador porque a estrada era perigosa, mas tudo ocorreu bem.</p>
             <img src="imagens/imagem8.jpg" alt="Imagem da viagem 2">
         </section>
         <section id="vi3">
-            <h2>Coisas Aleatórias</h2>
+            <h2><i class="fas fa-utensils"></i> Coisas Aleatórias</h2>
             <p>Passamos em muitas lojas e restaurantes diferentes, e comemos muito. Foi uma das experiências mais únicas que eu já tive, como fico muito tempo em casa.</p>
             <img src="imagens/imagem4.jpg" alt="Imagem da viagem 3">
         </section>
         <section id="gallery">
-            <h2>Galeria de Fotos</h2>
+            <h2><i class="fas fa-camera"></i> Galeria de Fotos</h2>
             <div class="gallery">
                 <img src="imagens/imagem1.jpg" alt="Foto 1">
                 <img src="imagens/imagem2.jpg" alt="Foto 2">
@@ -56,12 +59,22 @@
             </div>
         </section>
         <section id="dicas">
-            <h2>Dicas e Aprendizados</h2>
-            <p>Não comer muito e passar em ruas curvas, não foi nada legal!</p>
+            <h2><i class="fas fa-info-circle"></i> Dicas e Aprendizados</h2>
+            <p id="dicas-paragraph">Não comer muito e passar em ruas curvas, não foi nada legal!</p>
+        </section>
+        <section id="interacoes">
+            <h2><i class="fas fa-cogs"></i> Interações</h2>
+            <p id="message">Use os botões para interagir com a página.</p>
+            <div class="actions">
+                <button id="toggle-dicas">Mostrar/Ocultar dicas</button>
+                <button id="toggle-tema">Alternar tema</button>
+                <button id="highlight-gallery">Destacar galeria</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2026 Meu Diário de Viagem</p>
+        <p><i class="fas fa-compass animate-spin"></i> © 2026 Meu Diário de Viagem</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

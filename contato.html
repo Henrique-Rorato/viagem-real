@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Diário de Viagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="index.html#intro"><i class="fas fa-plane"></i> Introdução</a></li>
+                <li><a href="index.html#vi1"><i class="fas fa-lightbulb"></i> Viagem 1</a></li>
+                <li><a href="index.html#vi2"><i class="fas fa-mountain"></i> Viagem 2</a></li>
+                <li><a href="index.html#vi3"><i class="fas fa-utensils"></i> Viagem 3</a></li>
+                <li><a href="index.html#gallery"><i class="fas fa-camera"></i> Galeria</a></li>
+                <li><a href="index.html#dicas"><i class="fas fa-info-circle"></i> Dicas</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contato">
+            <h1><i class="fas fa-envelope"></i> Entre em Contato</h1>
+            <p>Quer compartilhar suas próprias aventuras ou tem dicas para viagens? Entre em contato comigo!</p>
+            <form action="#" method="post">
+                <label for="nome"><i class="fas fa-user"></i> Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email"><i class="fas fa-at"></i> Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem"><i class="fas fa-comment"></i> Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><i class="fas fa-compass animate-spin"></i> © 2026 Meu Diário de Viagem</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
